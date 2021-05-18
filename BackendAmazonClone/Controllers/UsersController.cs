@@ -214,11 +214,11 @@ namespace BackendAmazonClone.Controllers
         }
 
         //api/Users
-        [HttpDelete]
+        /*[HttpDelete]
         public async Task<ActionResult> ClearAll ()
         {
             await _userRepository.ClearAll();
             return NoContent();
-        }
+        }*/
     }
 }

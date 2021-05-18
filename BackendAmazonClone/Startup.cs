@@ -38,7 +38,7 @@ namespace BackendAmazonClone
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:3030").AllowAnyHeader().AllowAnyMethod();
+                        builder.WithOrigins("http://localhost:3030", "https://backendamazonclone.azurewebsites.net/").AllowAnyHeader().AllowAnyMethod();
                     });
             });
 
